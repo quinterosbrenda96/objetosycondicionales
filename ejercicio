@@ -1,0 +1,32 @@
+let objetoPersona = {
+nombre: 'pirucha',
+edad: 15,
+altura: 165,
+}
+
+function clasificarPersona(persona) {
+if (persona.edad <= 12) {
+console.log('niño')
+} else if(persona.edad >= 13 && persona.edad <= 17) {
+console.log('adolescente')
+} else if(persona.edad >= 18 && persona.edad <= 35) {
+console.log('adulto joven')
+} else if(persona.edad >= 36 && persona.edad <= 64) {
+console.log('adulto')
+} else if(persona.edad >= 65) {
+console.log('adulto mayor')
+
+}
+
+
+if (persona.altura <= 160) {
+console.log('bajo')
+} else if (persona.altura >= 160 && persona.altura <= 179) {
+console.log('medio')
+} else if (persona.altura >= 180) {
+console.log('alto')
+}
+
+console.log(persona.nombre)
+}
+clasificarPersona(objetoPersona);
